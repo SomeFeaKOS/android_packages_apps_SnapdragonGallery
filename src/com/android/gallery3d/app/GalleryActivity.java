@@ -152,10 +152,10 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
     }
 
     private static final ActionItem[] sActionItems = new ActionItem[] {
-            new ActionItem(FilterUtils.CLUSTER_BY_TIME,
-                    R.string.timeline_title, R.drawable.timeline),
             new ActionItem(FilterUtils.CLUSTER_BY_ALBUM, R.string.albums_title,
                     R.drawable.albums),
+            new ActionItem(FilterUtils.CLUSTER_BY_TIME,
+                    R.string.timeline_title, R.drawable.timeline),
             new ActionItem(FilterUtils.CLUSTER_BY_VIDEOS,
                     R.string.videos_title, R.drawable.videos) };
 
@@ -244,10 +244,10 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
         switch (position) {
 
         case 0:
-            startTimelinePage(); //Timeline view
+            startAlbumPage(); // Albums View
             break;
         case 1:
-            startAlbumPage(); // Albums View
+            startTimelinePage(); //Timeline view
             break;
         case 2:
             startVideoPage(); // Videos view
